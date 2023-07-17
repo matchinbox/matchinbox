@@ -31,7 +31,7 @@ const NavMenu = ({ children }) => {
         <Link to={"/termsandcondition"}>
           <MenuItem>TERMS AND CONDITION</MenuItem>
         </Link>
-        <MenuItem>Download</MenuItem>
+        <MenuItem>DOWNLOAD</MenuItem>
       </MenuList>
     </Menu>
   );
