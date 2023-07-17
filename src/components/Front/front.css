@@ -1,0 +1,326 @@
+.frontContainer{
+
+    background-image: url("/img/background.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position:relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+    
+}
+.gradient_bg{
+    position: absolute;
+    background: linear-gradient(69deg,rgb(0 0 0 / 64%),rgb(0 0 0 / 0%) ,rgb(0 0 0 / 42%),rgb(0 0 0 / 72%));
+    width: 100%;
+    height: 100%;
+
+}
+.frontContainer_content{
+    position: relative;
+    
+    max-width: 1024px;
+    margin: auto;
+    width: 100%;
+
+    height: 100%;
+    animation: animateIMg 3s ease-in-out infinite alternate-reverse;
+
+}
+.frontContainerTextContent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30%;
+    bottom: 0;
+    margin: auto;
+    height: auto;
+    height: fit-content;
+}
+.multipleImg{
+    position: absolute;
+    left: 10%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.multipleImg img{
+    width: 18%;
+}
+.multipleImg img:nth-of-type(1){
+    width: 12%;
+}
+.multipleImg img:nth-of-type(3){
+    width: 12%;
+}
+.container_main_img{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    /* bottom: 0; */
+    margin: auto;
+    width:25%;
+    
+}
+.container_main_heading{
+    margin-bottom: 1rem;
+    text-align: start;
+    font-size: 1.9rem;
+    letter-spacing: 1px;
+    line-height: 42px;
+    font-weight: bolder;
+    color: white;
+}
+.container_main_desc{
+    line-height: 23px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+    text-align:justify;
+}
+
+
+@keyframes animateIMg {
+    0%{
+        scale: 1;
+        opacity: 0.9;
+        transform: translateY(-5px);
+    }
+    100%{
+        transform: translateY(20px);
+        scale: 1.04;
+    }
+    
+}
+
+
+@media screen and ( min-width:768px) and (max-width:992px) {
+
+    .container_main_img{
+        top: 15%;
+        opacity: 0.6;
+        width: 22%;
+
+
+    }
+    .container_main_heading{
+        text-align: center;
+        font-size: 2rem ;
+    }
+    
+    .container_main_desc{
+        font-size: 20px;
+        line-height: 25px;
+        text-align: justify;
+
+    }
+    .frontContainer_content{
+        width: 80%;
+    }
+    .frontContainerTextContent{
+        right: 0;
+        top: 25%;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    .multipleImg{
+        opacity: 0.6;
+        top: 10%;
+        height: fit-content;
+        margin: 0;
+    }
+    
+    .multipleImg img:nth-of-type(1),.multipleImg img:nth-of-type(3){
+        width: 22%;
+    }
+    .multipleImg img:nth-of-type(2){
+        width: 26%;
+    }
+    .gradient_bg{
+        background: linear-gradient(155deg,rgb(0 0 0 / 91%),rgb(0 0 0 / 81%) ,rgb(0 0 0 / 52%),rgb(0 0 0 / 33%));
+    }
+    .navListing{
+        font-size: 12px;
+    }
+}
+@media screen  and(min-width:990) and (max-width:1100px){
+    .navListing{
+        font-size: 6px;
+    }
+    
+}       
+
+@media screen and (min-width:992px)and (max-width:1130px){
+    .navListing{
+        font-size: 11px;
+    }
+}
+
+
+
+@media screen and ( min-width:600px) and (max-width:768px) {
+    .gradient_bg{
+        background: linear-gradient(155deg,rgb(0 0 0 / 91%),rgb(0 0 0 / 81%) ,rgb(0 0 0 / 52%),rgb(0 0 0 / 33%));
+    }
+    
+    .container_main_img{
+        top: 10%;
+        opacity: 0.6;
+        width: 38%;
+
+
+    }
+    .container_main_heading{
+        text-align: center;
+        font-size: 2rem ;
+        line-height: 41px;
+    }
+    
+    .container_main_desc{
+        font-size: 15px;
+        text-align: justify;
+
+    }
+    .frontContainer_content{
+        width: 80%;
+    }
+    .frontContainerTextContent{
+        right: 0;
+        top: 20%;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    .multipleImg{
+        margin: 0;
+        top: 10%;
+        opacity: 0.6;
+        height: fit-content;
+    }
+}
+@media screen and ( min-width:480px) and (max-width:600px) {
+
+    .gradient_bg{
+        background: linear-gradient(155deg,rgb(0 0 0 / 91%),rgb(0 0 0 / 81%) ,rgb(0 0 0 / 52%),rgb(0 0 0 / 33%));
+    }
+    
+    .navListing{
+        font-size: 8px;
+    }
+
+    .container_main_img{
+        top: 15%;
+        opacity: 0.6;
+        width: 45%;
+
+
+    }
+    .container_main_heading{
+        text-align: center;
+        font-size: 2rem ;
+        line-height: 41px;
+    }
+    
+    .container_main_desc{
+        font-size: 13px;
+        text-align: justify;
+
+    }
+    .frontContainer_content{
+        width: 80%;
+    }
+    .frontContainerTextContent{
+        right: 0;
+        top: 27%;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    .multipleImg{
+      
+        margin: 0;
+        top: 10%;
+        height: fit-content;
+        opacity: 0.6;
+    }
+}
+@media screen and  (max-width:480px) {
+
+    .container_main_img{
+        top: 10%;
+        opacity: 0.6;
+        width: 45%;
+
+
+    }
+    .smallImg{
+        width: 37% !important;
+    }
+    .gradient_bg{
+        background: linear-gradient(155deg,rgb(0 0 0 / 91%),rgb(0 0 0 / 81%) ,rgb(0 0 0 / 52%),rgb(0 0 0 / 33%));
+    }
+    .container_main_heading{
+        text-align: center;
+        line-height: 37px;
+        font-size: 1.7rem ;
+        width: 100%;
+        letter-spacing: 1px;
+    }
+    
+    .container_main_desc{
+        font-size: 13px;
+        text-align: justify;
+
+    }
+    .frontContainer_content{
+        width: 90%;
+    }
+    .frontContainerTextContent{
+        right: 0;
+        top: 23%;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    .multipleImg{
+        margin: 0;
+        top: 20%;
+        opacity: 0.6;
+        height: fit-content;
+    }
+    .firstItem{
+        top: 14% !important;
+    }
+    .firstItem .container_main_desc{
+        font-size: 14px;
+    }
+    .firstItem +img{
+        width: 32% !important;
+    }
+    .multipleImg img:nth-of-type(1),.multipleImg img:nth-of-type(3){
+        width: 24%;
+    }
+    .multipleImg img:nth-of-type(2){
+        width: 35%;
+    }
+    .firstItem .container_main_desc{
+        font-size: 9px;
+    }
+}
+
+@media  screen  and (min-width:992px){
+
+    .container_main_img{
+        bottom: 0;
+    }
+    
+}

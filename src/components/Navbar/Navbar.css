@@ -1,0 +1,167 @@
+.navbar{
+    display: flex;
+    height: 70px;
+    width: 100%;
+    justify-content: space-between;
+    /* background-color: black; */
+    align-items: center;
+    padding: 0 2rem;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.nav_list{
+    display: flex;
+    gap: 2rem
+    ;
+    list-style: none;
+    text-align: center;
+align-items: center;
+}
+.navListing{
+
+
+cursor: pointer;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 30px;
+/* identical to box height, or 143% */
+
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #F7F3F3;
+
+}
+.nav_download_button{
+
+    border: 3px solid rgb(255, 254, 254);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    height: 40px;
+   
+    padding: 0 1rem;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+
+
+}
+
+.logoImg{
+    width: 80px;
+}
+
+.menuIcon{
+    display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+
+    .logoImg{
+        width: 60px;
+    }
+    
+    .navListing{
+        font-size: 10px;
+    }
+    .nav_download_button{
+        font-size: 8px;
+        font-weight: 100;
+        border: 1px solid;
+        height: 32px;
+        padding:  0 5px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px) {
+
+
+    .logoImg{
+        width: 60px;
+    }
+    
+    .navListing{
+        font-size: 10px;
+    }
+    .nav_download_button{
+        font-size: 8px;
+        font-weight: 100;
+        border: 1px solid;
+        height: 32px;
+        padding:  0 5px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .navbar {
+      padding: 0 10px;
+    }
+  
+    .logoImg {
+      width: 50px;
+    }
+  
+    .navListing {
+      font-size: 8px;
+    }
+  
+    .nav_list {
+      display: none;
+      gap: 10px;
+    }
+  
+    .nav_download_button {
+      font-size: 8px;
+      font-weight: 100;
+      border: 1px solid;
+      height: 32px;
+      padding: 0 5px;
+      display: none;
+    }
+  
+    .menuIcon {
+      display: block;
+      color: rgb(255, 61, 8);
+      font-size: 2rem;
+    }
+  }
+  
+@media screen and (max-width: 480px) {
+
+    .navbar{
+        padding: 0 10px;
+    }
+
+    .logoImg{
+        width: 50px;
+    }
+    
+    .navListing{
+        font-size: 8px;
+
+    }
+    .nav_list{
+        display: none;
+        gap: 10px;
+    }
+    .nav_download_button{
+        font-size: 8px;
+        font-weight: 100;
+        border: 1px solid;
+        height: 32px;
+        padding:  0 5px;
+        display: none;
+    }
+    .menuIcon{
+        display: block;
+        color: rgb(255, 61, 8);
+        font-size: 2rem;
+    }
+}
