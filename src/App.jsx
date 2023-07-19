@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home/Home";
 import "./App.css";
@@ -9,6 +9,13 @@ import Ourfeatures from "./pages/Features/Ourfeatures";
 import Aboutus from "./pages/about/Aboutus";
 
 const App = () => {
+  // const screenRef = useRef();
+
+  // useEffect(() => {
+  //   console.log("app clicked ", screenRef.current);
+  //   screenRef.current.focus();
+  // }, [screenRef.current]);
+
   return (
     <div className="App">
       <Routes>
